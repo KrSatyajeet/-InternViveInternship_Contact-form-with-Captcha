@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body onload="generateCaptcha()">
+    <div class="container">
+        <div class = "form">
+            <h2>Contact Form <img alt="icon" src="images/icon.png"></h2>
+            <label for = "name">Name*</label>
+            <div class="name">
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autofocus>
+            </div>
+            <label for = "email">Email*</label>
+            <div class="name">
+                <input type="text" id="email" name="email" placeholder="Eg. ABC@gmail.com" required>
+            </div>
+            <label for = "phone">Phone Number*</label>
+            <div class="name">
+                <input type="text" id="phone" name="phone" placeholder="Enter your Mobile Number" required>
+            </div>
+            <label for = "subject">Subject*</label>
+            <div class="name">
+                <input type="text" id="subject" name="subject" placeholder="Enter your Topic name" required >
+            </div>
+            <label for = "message">Message</label>
+            <div class="message">
+                <textarea name="t1" rows="5" cols="50" maxlength="500"placeholder="Write Your Message Here"></textarea>
+            </div>
+            &nbsp; 
+            <div class="captcha" id="captchaImage">
+                <input  type="text" placeholder="Captcha">
+            </div>
+            <div class="refresh">
+            <button onclick="Refresh()" >Refresh CAPTCHA</button>
+            </div>
+            &nbsp;
+            <label for = "captcha">Enter the CAPTCHA code:</label>
+            
+            <div class="name">
+                <input type="text" id="cap" name="captcha" placeholder="Enter Character written in Box" >
+                
+            </div>
+            <div class="submit">
+            <button onclick="sendData()" id="send-data">Submit</button>
+            </div>
+        </div>
+    </div> 
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.highlight {
+    border: 2px solid red; /* Change border color to highlight */
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+.form{
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    margin: 40px auto 40px;
+    padding: 50px 30px 50px;
+    border-radius: 10px;    
+}
+.name{
+    width:90%;
+    min-height: 100%;
+    background: linear-gradient(135deg, #d180da, #768be6);
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.message{
+    width:90%;
+    min-height: 100%;
+    background: linear-gradient(135deg, #d180da, #768be6);
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+.form h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form h2 img{
+    width: 30px;
+    margin-left: 10px;    
+    
+}
+textarea{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 20px;
+    padding: 5px;
+    width: 340px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    font-weight: 20px;
+    width: 340px;
+    
+}
+.captcha{
+    flex: 1;
+    border: 1px solid black;
+    outline: none;
+    background: linear-gradient(135deg, #796eed, #9e1ec9);
+    padding: 7px;
+    font-weight: 20px;
+    width: 150px;
+    border-radius: 10px;
+    
+}
+label{
+    font-size: medium;
+    display: block;
+    font-weight: bold;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 6px 15px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.submit{
+    text-align: center;
+}
